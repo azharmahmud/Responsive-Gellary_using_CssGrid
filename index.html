@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Gellary </title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-gap: 3px;
+            grid-auto-flow: dense;
+        }
+        .container  div img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .horizontal{
+            grid-column: auto / span 2;
+        }
+        .vartical{
+            grid-row: auto / span 2;
+        }
+        .big{
+            /*grid-column: auto / span 2;*/
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="big"> <img src="images/big4.jpg" alt=""></div>
+        <div class="vartical"> <img src="images/var1.jpg" alt=""></div>
+        <div class="horizontal"> <img src="images/hori1.jpg" alt=""> </div>
+        <div> <img src="images/normal2.jpg" alt=""></div>
+        <div class="big"> <img src="images/foodpic.jpg" alt=""></div>
+        <div class="horizontal"> <img src="images/hori2.jpg" alt=""></div>
+        <div class="horizontal"> <img src="images/hori3.jpg" alt=""></div>
+        <div class="big"> <img src="images/big1.jpg" alt=""></div>
+        <div class="horizontal"> <img src="images/hori5.jpg" alt=""></div>
+        <div> <img src="images/normal1.jpg" alt=""></div>
+        <div class="big"> <img src="images/big2.jpg" alt=""></div>
+        <div class="vartical"> <img src="images/var2.jpg" alt=""></div>
+        <div class="big"> <img src="images/foodpic3.jpg" alt=""></div>
+        <div class="vartical"> <img src="images/var3.jpg" alt=""></div>
+        <div class="big"> <img src="images/big3.jpg" alt=""></div>
+        <div class="vartical"> <img src="images/var6.jpg" alt=""></div>
+        <div> <img src="images/normal3.jpg" alt=""></div>
+        <div class="horizontal"> <img src="images/hori6.jpg" alt=""></div>
+        <div class="big"> <img src="images/big5.jpg" alt=""></div>
+        <div class="vartical"> <img src="images/roozbeh-eslami-YlVjrBkfXt8-unsplash.jpg" alt=""></div>
+        <div> <img src="images/normal4.jpg" alt=""></div>
+        <div class="vartical"> <img src="images/foodpic2.jpg" alt=""></div>
+        <div class="big"> <img src="images/big6.jpg" alt=""></div>
+    </div>
+</body>
+</html>
